@@ -1,0 +1,272 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+.nav{
+    background-color: #6391ac; 
+    height: 70px; 
+    color: black; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+  
+}
+
+.links-nav{
+    display: inline-flex ;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    margin-left: 0px;
+
+}
+
+.links-nav li{
+    margin-right: 20px;
+}
+
+.links-nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #2799b0;
+    border: 3px solid black;
+    text-align: right;
+    padding: 5px;
+}
+
+/* aqui comienza div de Priscial Espinoza*/
+
+.page-body {
+    height: 150px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 30px; 
+}
+
+.card {
+    width: 500px;
+    border: 1px solid gray;
+    margin: 0;
+}
+
+.cards-header {
+    height: 80px;
+    background-color: #7dbad4;
+}
+
+.card-body { 
+    height: 150px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
+.icono {
+    width: 12px;
+    height: 15px;
+    margin-left: 3px;
+    margin-top: 5px;
+    
+}
+
+.imagen-usuario {
+    width: 60px;
+    border: 3px solid lightgray;
+    border-radius: 50px;
+    position: relative;
+    top: 45px;
+    left: 25px;
+}
+
+.name{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.mapa{
+    height: 20px;
+}
+.city{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.estudios{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.editar{
+    margin-top: 1px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.page-body {
+    display: flex;
+    flex-direction: row;
+}
+
+/*aqui comienza mi div Educación*/
+
+.educacion-header {
+    background-color: white ;
+    color: black;
+    height: 250px;
+    border: 1px solid gray;
+    padding: 0px;
+    margin-top: 15px;  
+}
+
+#h4-educacion{
+    background-color: #7dbad4;
+    padding: 15px;
+    color: black;
+}
+.card-educacion{
+    padding: 20px;
+}
+
+.info-educacion   {
+   text-align: justify;
+   line-height: 50px;
+}
+
+.cursos {
+    font-weight: bold;
+    line-height: 50px;
+}
+
+/* aqui comienza soliciudes de amistad*/
+.cards-header-solicitud{
+    height: 80px;
+    background-color: #7dbad4;
+    padding: 5px;
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+}
+
+.aceptar-rechazar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagen-nombre {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.aceptar-rechazar-icon {
+    height: 20px;
+    border-radius: 20%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card-list {
+    padding: 0 20px;
+    padding-top: 20px;
+    list-style-type: none;
+    border: 2px solid gray;
+}
+
+.card-list-item, 
+.card-list-item > * {
+    display: flex;
+    align-items: center;
+}
+
+.card-list-item {
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.card-list-item.start {
+    justify-content: flex-start;
+}
+
+.aceptar-rechazar-icon {
+    height: 20px;
+    margin-left: 15px;
+}
+
+.aceptar-rechazar-icon .btn {
+    cursor: pointer;
+}
+
+.aceptar-rechazar-icon:last-child {
+    margin-right: 0;
+}
+
+.badge {
+    font-size: 1rem;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    background-color: #999;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.extra {
+    background-color: blue;
+}
+
+
+/*aqui comienza your connections*/
+
+.box {
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    
+}
+
+.box-header {
+    padding: 20px;
+    color: #f3f3f3;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color:  #7dbad4;
+}
+
+
+.view-more {
+    text-decoration: underline;
+    color: blue;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid gray;  
+}
+.modal{
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: none;
+}
+.showModal{
+    display: block;
+}
+
+.mainOpacity{
+    opacity: 0.3;
+}
