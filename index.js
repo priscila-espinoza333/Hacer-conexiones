@@ -1,14 +1,34 @@
-//opción con modal 
+
+/* SIN MODAL*/
+function cambiarNombre(elemento){
+  const elementoNombreUsuario = document.querySelector('#user-name');
+  elementoNombreUsuario.innerText = "Carmen Soto";
+}
+
+function removerUsuario(elemento, opcion){
+  const contenedor = elemento.closest(".card-list-item");
+  contenedor.remove(); // hasta aqui estoy removiendo el contacto, aceptando o rechazando la solicitud de amistad
+  let numeroDeConexiones = document.querySelector('#connectionRequestNumber').innerText;
+  numeroDeConexiones -- ;
+  document.querySelector("#connectionRequestNumber").innerText = numeroDeConexiones;
+  if(opcion === 'aceptar'){ // aqui hago la condicion para saber si dio en aceptar y sumar un contacto en los contactos
+    let numeroTotalDeConexiones = document.querySelector('#totalConnections').innerText;
+    numeroTotalDeConexiones ++;
+    document.querySelector('#totalConnections').innerText = numeroTotalDeConexiones;
+  }
+}
+
+/*//CON MODAL
 
 function mostrarmodal(elemento){
   const modal = document.querySelector('.modal');
   modal.classList.add('showModal');
-  const contenedorPrincipal = document.querySelector('main');
+  const contenedorPrincipal = document.querySelector('.main');
   contenedorPrincipal.classList.add('mainOpacity');
   document.querySelector('#editUserName').value = "";
 }
 
-function cambiarNombre(evento){
+function cambiarNombre(elemento){
   evento.preventDefault();
   console.log(evento);
   const elementoNombreUsuario = document.querySelector('#user-name');
@@ -33,18 +53,7 @@ function removerUsuario(elemento, opcion){
     numeroTotalDeConexiones++;
     document.querySelector('#totalConnections').innerText = numeroTotalDeConexiones;
   }
-  
-
-}
-
-
-/* primera forma... debo terminarlo
-function cambiarNombre(elemento){
-  const  elementoNombreUsuario = document.querySelector('#user-name');
-  elementoNombreUsuario.innerText = "Carmen Soto";
-}*/
-
-
+} */
 
 
 
