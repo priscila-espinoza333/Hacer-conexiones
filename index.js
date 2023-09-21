@@ -1,4 +1,20 @@
+ //setInterval se utilza para detener la repeticion del mensaje
+ const mensaje = setInterval(function(){
+  //alert("bienvenido a nuestra aplicación");
+  console.log("bienvenido a nuestra aplicación")
+}, 2000);
 
+
+//funcion settimeout se utiliza para darle un tiempo antes de ejecutar un codigo.
+function logout(elemento){
+  console.log("esto se ejecuta inmediatamente");
+  clearInterval(mensaje); // aqui es donde se detiene el mensaje
+  setTimeout(function(){
+    console.log("esto se ejecuta despues de 4 seg")
+    alert("cerrando Sesion") // se puede aplicar un alert se puede utilizar a nivel general de js
+  },4000);
+
+}
 /* SIN MODAL*/
 function cambiarNombre(elemento){
   const elementoNombreUsuario = document.querySelector('#user-name');
@@ -17,6 +33,8 @@ function removerUsuario(elemento, opcion){
     document.querySelector('#totalConnections').innerText = numeroTotalDeConexiones;
   }
 }
+
+
 
 /*//CON MODAL
 
